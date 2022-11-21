@@ -2,7 +2,10 @@
 
 This program calculates miles per gallon given miles driven and gallons used.
 
-### Program Guidelines:
+### Program Logic:
 
-- Must use exception handling in C# to check for numeric inputs and division by zero
-- Must use appropriate logic to check for the reasonableness of the inputs
+- Prompt user for inputs and calulate MPG
+- Using exception handling check for:
+  1. Numeric inputs
+  2. Division by zero
+  3. Reasonable input
