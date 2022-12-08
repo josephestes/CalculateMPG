@@ -1,23 +1,22 @@
 # CalculateMPG
 
-This program calculates miles per gallon given miles driven and gallons used.
+This program calculates a vehicle's Miles per Gallon (MPG) based on the number of miles driven and gallons of fuel used.
 
-## Usage/Examples
+# Features
+
+- Prompts user for miles driven and gallons used
+- Checks for reasonable input values
+- Uses exception handling to handle incorrect input types and division by zero
+- Outputs calculated miles per gallon
+
+## Example
 
 ```
-Please enter the number of miles driven:
-45
-Enter the number of gallons used:
-3
-Your miles per gallon is: 15
+Please enter the number of miles driven: 
+300
+Enter the number of gallons used: 
+15
+Your miles per gallon is: 20
 
 Press any key to close this window . . .
 ```
-
-### Program Logic:
-
-- Prompt user for inputs and calulate MPG
-- Using exception handling check for:
-  1. Numeric inputs
-  2. Division by zero
-  3. Reasonable input
