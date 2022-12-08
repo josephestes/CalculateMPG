@@ -27,7 +27,7 @@ namespace CalculateMPG
                 milesDriven = Convert.ToInt32(ReadLine());
 
                 //Check for reasonable input
-                while (milesDriven < 0 || milesDriven > 1000)
+                if (milesDriven < 0 || milesDriven > 1000)
                 {
                     WriteLine("Invalid entry! Enter a positive value up to 1000: ");
                     milesDriven = Convert.ToInt32(ReadLine());
@@ -38,7 +38,7 @@ namespace CalculateMPG
                 gallonsUsed = Convert.ToInt32(ReadLine());
 
                 //Check for reasonable input
-                while (gallonsUsed < 0)
+                if (gallonsUsed < 0)
                 {
                     WriteLine("Invalid entry! Enter a positive value: ");
                     gallonsUsed = Convert.ToInt32(ReadLine());
@@ -46,7 +46,6 @@ namespace CalculateMPG
 
                 //Calculate miles per gallon
                 milesPerGallon = milesDriven / gallonsUsed;
-
             }
             //Incorrect input type exception
             catch (FormatException error)
